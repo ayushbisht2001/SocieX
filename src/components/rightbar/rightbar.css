@@ -1,7 +1,8 @@
 .rightbar{
     flex:3.5;
-    height: calc(100vh - 60px);
-    /* background-color: blueviolet; */
+    /* max-height: calc(100vh - 60px); */
+    /* position: sticky;
+    top: 60px;  */
 }
 
 .rightbarWrapper{
@@ -41,39 +42,51 @@
     list-style: none;
 }
 
-.rightbarFriend{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px ;
+
+.rightbarProfileTitle{
+    font-style: 18px;
+    margin-bottom:10px ;
 }
 
-
-.rightbarProfileImgContainer{
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
+.rightbarInfo{
+    margin-bottom: 30px;
 }
 
-.rightbarProfileImg{
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+.rightbarInfoItem{
+    margin-bottom: 10px;
 }
 
-.rightbarOnline{
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgb(0, 190, 0);
-    top: 0;
-    right: -2px;
-    border:1px solid #fff;
-}
-
-.rightbarUsername{
+.rightbarInfoKey{
     font-weight: 500;
+    color: #555;
+    margin-right: 15px;
+
+}
+
+.rightbarInfoValue{
+    font-weight: 300;
+
+}
+
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rightbarFollowing{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.rightbarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }

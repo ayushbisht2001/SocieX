@@ -22,7 +22,9 @@ code {
 
 :root{
   --primary-color: #536DFE;
+  /* --primary-color: #6C63FF; */
   --secondary-color:#fff;
+  
 
 
   --primary-border: 2px solid;
@@ -34,6 +36,9 @@ code {
 
 button, a{
   cursor: pointer;
+}
+a{
+  text-decoration: none;
 }
 
 
